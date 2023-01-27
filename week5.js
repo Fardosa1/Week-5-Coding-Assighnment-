@@ -1,5 +1,5 @@
 class MenuList { 
-    constructor (item, price){
+    constructor (coffeeName, price){
         this.coffeeName = coffeeName;
         this.price = price;
      // This portion of the code creates a class that represents the menu list, It also has a constructor function that has two paramaters, name and price.
@@ -32,7 +32,7 @@ viewList() {
 
 deleteList(coffeeName)
 for (let i = 0; i < this.list.length; i++) {
-    if (this.items[i].coffeeName === coffeeName) {
+    if (this.list[i].coffeeName === coffeeName) {
         this.list.splice (i, 1);
     // This portion of the code has a forloop that goes through the coffeeName array! When the names in the list match the names thats passing in the function, then the item is removed from the list :()
     }
